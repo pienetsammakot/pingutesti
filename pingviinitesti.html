@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="funktiot.js"></script>
+<style>
+
+  .jotain {
+    color: brown;
+  }
+
+  .kakki {
+    color: green;
+  }
+
+  .kysely {
+    border: 2px dotted black;
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="kysely">
+    <h1 class="kakki">Testaa mikä pingviini olet</h1>
+    
+    <form class="jotain" id="kysymys1">
+      <h3>Kuinka pitkä olet?</h3>
+      <input type="radio" id="q1a1" name="pingu1" value="keke1">Keskivertoa pidempi</input>
+      <br>
+      <input type="radio" id="q1a2" name="pingu1" value="mys1">Keskiverto</input>
+      <br>
+      <input type="radio" id="q1a3" name="pingu1" value="sin1">Pikkuinen</input>
+      <br>
+    </form>
+
+    <form class="jotain" id="kysymys1">
+      <h3>Viihdytkö kylmässä vai lämpimässä?</h3>
+      <input type="radio" id="q2a1" name="pingu2">Kylmää olla pitää</input>
+      <br>
+      <input type="radio" id="q2a2" name="pingu2">Molemmat on jees</input>
+      <br>
+      <input type="radio" id="q2a3" name="pingu2">Etelän lämpöä tänne kiitos</input>
+      <br>
+    </form>
+
+    <form class="jotain" id="kysymys1">
+      <h3>Mikä on keskiverto elinajanodotteesi?</h3>
+      <input type="radio" id="q3a1" name="pingu3">N. 20 vuotta</input>
+      <br>
+      <input type="radio" id="q3a2" name="pingu3">15-20 vuotta</input>
+      <br>
+      <input type="radio" id="q3a3" name="pingu3">6,5 vuotta</input>
+      <br>
+    </form>
+  </div>
+
+  <!-- SUBMITTAA VASTAUKSET JA SUORITTAA TULOSTEN LASKENTAAN JA NÄYTTÖÖN TARVITTAVAT FUNKTIOT -->
+  <button type="submit" onclick="tulosLasku1(); tulosLasku2(); tulosLasku3(); showResults();">Katso tulokset</button>
+
+  <!-- TULOKSET NÄYTETÄÄN TÄSSÄ -->
+  <p id="output"></p>
+
+  <!-- PÄIVITTÄÄ SIVUN JOTTA KYSELY RESETTAA -->
+  <button onClick="window.location.href=window.location.href;">Tee uudelleen</button>
+</body>
+
+</html>
