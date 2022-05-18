@@ -57,5 +57,5 @@ function showResults()
 {
   tulokset.sort((a, b) => a[0]-b[0]);
   tulokset.reverse();
-  document.getElementById("output").innerHTML = "Olet " + tulokset[0][1] + "!";;
+  document.getElementById("output").innerHTML = "Olet " + tulokset[0][1] + "!";
 }
